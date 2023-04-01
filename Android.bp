@@ -3,6 +3,31 @@
 
 
 
+package {
+    default_applicable_licenses: [
+        "external_rust_crates_protobuf-support_license",
+    ],
+}
+
+// Added automatically by a large-scale-change
+//
+// large-scale-change included anything that looked like it might be a license
+// text as a license_text. e.g. LICENSE, NOTICE, COPYING etc.
+//
+// Please consider removing redundant or irrelevant files from 'license_text:'.
+// See: http://go/android-license-faq
+license {
+    name: "external_rust_crates_protobuf-support_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-MIT",
+    ],
+    license_text: [
+        "LICENSE",
+        "LICENSE.txt",
+    ],
+}
+
 rust_library {
     name: "libprotobuf_support",
     host_supported: true,
